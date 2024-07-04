@@ -4,10 +4,10 @@ from config import config
 from logging_config import logger  # Import the logger
 
 # 定义方向引脚 (DIR)、步进引脚 (STEP) 和使能引脚 (ENABLE)
-DIR_PIN = 20
-STEP_PIN = 21
-ENABLE_PIN = 16
-MODE_PINS = [14, 15, 18]  # 假设我们使用了这三个引脚来设置微步模式
+DIR_PIN = 13
+STEP_PIN = 19
+ENABLE_PIN = 12
+MODE_PINS = [16, 17, 20]  # 假设我们使用了这三个引脚来设置微步模式
 
 class DRV8825():
     def __init__(self, dir_pin, step_pin, enable_pin, mode_pins):

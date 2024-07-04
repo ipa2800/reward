@@ -30,7 +30,7 @@ class DRV8825():
         
     def Stop(self):
         self.digital_write(self.enable_pin, 0)
-    
+
     def SetMicroStep(self, mode, stepformat):
         """
         (1) mode
